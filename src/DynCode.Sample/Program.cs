@@ -39,12 +39,12 @@ namespace DynCode.Sample
             CreateInstanceFromFirstAssemblyType(asm);
         }
 
-private static Assembly CustomResolving(AssemblyLoadContext arg1, AssemblyName arg2)
-{
-    Console.WriteLine($"Try resolve: {arg2.FullName}");
-    //Maybe Load from different path e.g. Addon Path.
-    return arg1.LoadFromAssemblyPath(@"C:\Addons\" + arg2.Name + ".dll");
-}
+        private static Assembly CustomResolving(AssemblyLoadContext arg1, AssemblyName arg2)
+        {
+            Console.WriteLine($"Try resolve: {arg2.FullName}");
+            //Maybe Load from different path e.g. Addon Path.
+            return arg1.LoadFromAssemblyPath(@"C:\Addons\" + arg2.Name + ".dll");
+        }
 
         public static void ShowReferences()
         {
