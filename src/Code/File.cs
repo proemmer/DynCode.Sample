@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DynamicAssembly
+namespace Dynamic.Class
 {
-    public class Class1
+    public class DynamicClass
     {
-        public Class1()
+        public DynamicClass()
         {
         }
     }

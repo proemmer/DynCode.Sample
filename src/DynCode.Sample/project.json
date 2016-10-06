@@ -1,14 +1,18 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
+    "preserveCompilationContext": true,
     "emitEntryPoint": true
   },
 
   "dependencies": {
+    "Microsoft.CodeAnalysis.CSharp": "2.0.0-beta3",
+    "Microsoft.Extensions.DependencyModel": "1.0.1-beta-003206",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.1"
     },
+    "StaticAssembly": "1.0.0-*",
     "System.Runtime.Loader": "4.0.0"
   },
 
