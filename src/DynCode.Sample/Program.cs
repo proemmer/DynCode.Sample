@@ -95,7 +95,7 @@ namespace DynCode.Sample
             var compilation = CSharpCompilation.Create(
                 assemblyName,
                 trees,
-                GetMethaDataReferences(),
+                GetMetaDataReferences(),
                 new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary)
                 );
 
@@ -118,7 +118,7 @@ namespace DynCode.Sample
             }
         }
 
-        private static IEnumerable<MetadataReference> GetMethaDataReferences()
+        private static IEnumerable<MetadataReference> GetMetaDataReferences()
         {
             return DependencyContext.Default
                 .CompileLibraries
